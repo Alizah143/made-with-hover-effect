@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    color: white;
+}
+.top{
+    padding: 25px;
+    justify-content: space-between;
+}
+.logo {
+    margin-top: -4rem;
+}
+.logo img{
+    width: 150px;
+    margin: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    margin-top: -6rem;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 19px;
+}
+.navbar ul li a:hover{
+    color: white;
+    text-shadow: 0 5px 8px white;
+}
+#icon {
+    font-size: 22px;
+    display: none;
+}
+.text{
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+    align-items: center;
+    padding: 4rem;
+}
+.text h6{
+    margin-left: -29rem;
+    font-size: 17px;
+    font-weight: 200;
+}
+.text h1{
+    font-size: 12rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-top: -3rem;
+}
+.text h5{
+    font-size: 17px;
+    font-weight: 200;
+    margin-left: 32rem;
+    margin-top: -2rem;
+}
+.right{
+    margin-left: 82rem;
+    margin-top: -3rem;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+.social{
+     margin-top: -5rem;
+}
+.social a {
+    text-decoration: none;
+    padding: 5px;
+}
+.social a i{
+    color: white;
+    margin: 5px;
+    font-weight: 100;
+    font-size: 19px;
+}
+.social a i:hover{
+    color: white;
+    box-shadow: 0 5px 8px white;
+}
+
+
+
+
+
+@media (max-width:1320px){
+    .top{
+        padding: 0 50px;
+    }
+}
+@media (max-width:1100px){
+    .top{
+        padding: 0 30px;
+    }
+}
+@media (max-width:900px){
+    #icon{
+        display: block;
+        cursor: pointer;
+        margin-top: 17rem;
+       margin: 15px;
+    }
+    .text{
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    #icon i{
+        width: 30px;
+      /*  height: 3px;*/
+       color: white;
+        margin: 6px 0 ;
+    }
+    .navbar{
+        height: 0 ;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+      transition: 0.2s;
+    }
+    .navbar .active{
+         height: 450px;
+    }
+    .navbar ul li{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        opacity: 0;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .navbar ul li a{
+        margin-bottom: 12px;
+       margin-left: -17rem;
+       margin-top: 4rem;
+    }
+}
